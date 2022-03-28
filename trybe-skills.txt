@@ -1,6 +1,7 @@
 -Unix
 -Bash
 -Git
-- JS
-- Python
-- CSS
+-JS
+-Python
+-HTML
+-CSS
