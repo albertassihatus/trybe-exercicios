@@ -1,0 +1,10 @@
+function verificaPalindrome(nome){
+    const palindrome = nome.split('').reverse().join('');
+    if (palindrome === nome){
+      return verificaPalindrome = true
+    } else {
+      return verificaPalindrome = false
+  }
+    
+  }
+    console.log(verificaPalindrome('arara'));
