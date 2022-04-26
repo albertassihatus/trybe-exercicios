@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Formulário TrybeTrip</title>
 </head>
 <body>
@@ -11,6 +12,7 @@
     <h1>Formulário TrybeTrip</h1>
     </header>
     <main>
+        
         <form action="" method="get">
 
             <label for="input-text">Nome:
@@ -20,34 +22,37 @@
             <p>
 
             <label for="input-email">Email:
-                <input type="email" name="email" id="input-email" minlength="10" maxlength="50">
+                <input type="email" name="email" id="input-email" minlength="10" maxlength="50" required>
             </label>
 
             <p>
 
             <p>Destino Preferido:</p>
+            
             <label for="cidade">
-                <input type="radio" name="destinys" id="cidade">Cidade
+                <input type="radio" name="destinys" id="cidade" required>Cidade
             </label>
 
             <label for="Campo">
-                <input type="radio" name="destinys" id="Campo">Campo
+                <input type="radio" name="destinys" id="Campo" required>Campo
             </label>
 
             <label for="Praia">
-                <input type="radio" name="destinys" id="Praia">Praia
+                <input type="radio" name="destinys" id="Praia" required>Praia
             </label>
 
             <label for="Montanhas">
-                <input type="radio" name="destinys" id="Montanhas">Montanhas
+                <input type="radio" name="destinys" id="Montanhas" required>Montanhas
             </label>
 
             <p>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</p>
-            <textarea name="textoarea" id="text-area1" cols="30" rows="5" maxlength="500"></textarea>
+            
+                <textarea name="textoarea" id="text-area1" cols="30" rows="5" maxlength="500" required></textarea>
 
             <p>Qual a melhor data para realizar sua viagem?</p>
-            <label for="datetrip">Data
-            <input type="date" name="dataviagem" id="datetrip">
+
+            <label for="datetrip">Data:
+            <input type="date" name="dataviagem" id="datetrip" required>
             </label>
 
             <p></p>
@@ -55,9 +60,11 @@
             <label for="ofertas">
                 <input type="checkbox" name="oportunity" id="ofertas">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
             </label>
+
             <p></p>
+
             <label for="imgs">
-                <input type="checkbox" name="imagem" id="imgs">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
+                <input type="checkbox" name="imagem" id="imgs" required>Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
             </label>
 
             <p></p>
