@@ -1,0 +1,35 @@
+body{
+    background-color: rgb(55, 54, 100);
+}
+
+h1{
+    color: rgb(255, 255, 255);
+    box-shadow: 5px 5px 30px black;
+    font-family: monospace, Arial, sans-serif;
+    text-shadow: 1px 1px 5px black;
+}
+
+form{
+    box-shadow: 5px 5px 30px black;
+    width: 50%;
+    height: 780px;
+    margin: auto;
+    background-color: rgba(215, 233, 243, 0.616);
+    color: white;
+    text-shadow: 1px 1px 5px black;
+}
+
+.form-control{
+    text-align: center;
+    box-shadow: 1px 1px 5px black;
+}
+
+#text-area1{
+    margin: auto;
+    width: 50%;
+}
+
+button{
+    box-shadow: 1px 1px 5px black;
+}
+
