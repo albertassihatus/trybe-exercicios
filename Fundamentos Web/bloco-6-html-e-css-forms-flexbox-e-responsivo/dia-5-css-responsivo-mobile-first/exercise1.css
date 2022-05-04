@@ -1,0 +1,77 @@
+
+  html { 
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+    font-size: 1.2rem;
+    margin: 0 3%;
+}
+
+article {
+    text-align: justify;
+}
+
+h1 {
+
+    font-size: 1.8rem;
+    margin: .8em;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 1.5em 0 0 0;
+}
+
+img {
+	max-width: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+figure {
+	margin: 0;
+}
+
+figcaption {
+  font-size: .8em;
+}
+
+@media (max-width: 800px){
+    body {
+        background: rgb(216, 252, 255);
+        margin: 25px 6%;
+        text-align: center;
+      }
+    
+      figure {
+        width: 45%;
+        margin-right: 4.5%;
+      }
+    }
+
+@media (min-width: 801px){
+  body{
+      color: white;
+   background-color: rgb(156, 156, 156);
+   margin: 25px 10%;
+   max-width: 1130px;
+}
+figure {
+    width: 30%;
+    margin-right: 2.5%;
+
+  }
+}
