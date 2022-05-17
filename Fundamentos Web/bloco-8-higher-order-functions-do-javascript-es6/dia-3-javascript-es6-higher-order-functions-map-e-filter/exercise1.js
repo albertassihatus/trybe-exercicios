@@ -61,18 +61,34 @@ const books = [
     },
   ];
   
-  const expectedResult = [
-    'As Crônicas de Gelo e Fogo - Fantasia - George R. R. Martin',
-    'O Senhor dos Anéis - Fantasia - J. R. R. Tolkien',
-    'Fundação - Ficção Científica - Isaac Asimov',
-    'Duna - Ficção Científica - Frank Herbert',
-    'A Coisa - Terror - Stephen King',
-    'O Chamado de Cthulhu - Terror - H. P. Lovecraft',
-  ];
   
   function formatedBookNames() {
     // escreva seu código aqui
-    return books.map((book) => `${book.name} ${book.genre} ${book.author.name}`);
+    return books.map((book) => `${book.name} - ${book.genre} - ${book.author.name}`);
   }
   
   console.log(formatedBookNames());
+
+  
+  function nameAndAge() {
+    return books.map((book) => (
+      {
+        author: book.author.name,
+        age: book.releaseYear - book.author.birthYear,
+      }
+    )).sort((release, birth) => release.age - birth.age);
+  }
+  
+  console.log(nameAndAge());
+
+  function fantasyOrScienceFiction() {
+    return books.filter((book) => book.genre === 'Fantasia' || book.genre === 'Ficção Científica');
+  }
+  
+  console.log(fantasyOrScienceFiction());
+
+  function fantasyOrScienceFictionAuthors() {
+    return books.map((names) => names.author);
+  }
+
+  console.log(fantasyOrScienceFictionAuthors());
