@@ -1,0 +1,16 @@
+.App {
+  text-align: center;
+}
+
+
+.pokeCard {
+  margin: 20px;
+  width: 400px;
+  height: 150px;
+  border: 1px black solid;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
